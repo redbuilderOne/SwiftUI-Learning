@@ -24,9 +24,10 @@ struct DayOfWeek {
     var dayOfWeek: DayOfWeekEnum
     var imageName: ImageNameEnum
     var temperature: Int
+
 }
 
-let mon = DayOfWeek(dayOfWeek: DayOfWeekEnum.monday, imageName: ImageNameEnum.cloudy, temperature: 66)
+let mon = DayOfWeek(dayOfWeek: DayOfWeekEnum.monday, imageName: ImageNameEnum.cloudy, temperature: 64)
 let tue = DayOfWeek(dayOfWeek: DayOfWeekEnum.tuesday, imageName: ImageNameEnum.sunny, temperature: 74)
 let wed = DayOfWeek(dayOfWeek: DayOfWeekEnum.wednesday, imageName: ImageNameEnum.windy, temperature: 45)
 let thu = DayOfWeek(dayOfWeek: DayOfWeekEnum.thursday, imageName: ImageNameEnum.snowy, temperature: 32)

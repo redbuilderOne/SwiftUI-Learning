@@ -63,7 +63,6 @@ struct WeatherDayView: View {
             Text("\(temperature)")
                 .font(.system(size: 28, weight: .medium))
                 .foregroundColor(.white)
-
         }
     }
 }
