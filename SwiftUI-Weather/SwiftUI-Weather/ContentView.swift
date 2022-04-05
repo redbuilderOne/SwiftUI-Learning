@@ -15,26 +15,13 @@ struct ContentView: View {
                 MainWeatherStatusView(imageName: isNight ? "moon.stars.fill" : "cloud.sun.fill" , temperature: 76)
 
                 HStack(spacing: 20) {
-                    WeatherDayView(dayOfWeek: "TUE",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 74)
-
-                    WeatherDayView(dayOfWeek: "WED",
-                                   imageName: "sun.max.fill",
-                                   temperature: 88)
-
-                    WeatherDayView(dayOfWeek: "THU",
-                                   imageName: "wind.snow",
-                                   temperature: 55)
-
-                    WeatherDayView(dayOfWeek: "FRI",
-                                   imageName: "sunset.fill",
-                                   temperature: 60)
-
-                    WeatherDayView(dayOfWeek: "SAT",
-                                   imageName: "snow",
-                                   temperature: 25)
+                    day1
+                    day2
+                    day3
+                    day4
+                    day5
                 }
+                
                 Spacer()
 
                 Button {
@@ -44,7 +31,6 @@ struct ContentView: View {
                     // label - is how the button looks like
                     WeatherButton(title: "Change Day Time", textColor: .blue, backgroundColor: .white)
                 }
-
                 Spacer()
             }
         }
@@ -77,6 +63,7 @@ struct WeatherDayView: View {
             Text("\(temperature)")
                 .font(.system(size: 28, weight: .medium))
                 .foregroundColor(.white)
+
         }
     }
 }
